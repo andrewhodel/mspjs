@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no">
+<title>openFlight</title>
+
+<link type="text/css" href="screen.css" media="screen" rel="stylesheet" />
+
+<script src="jquery-1.8.2.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+
+</head>
+
+<body>
+
+<br style="clear: both;" />
+<br style="clear: both;" />
+
+<div id="yaw">
+YAW
+</div>
+
+<div id="bar">
+<div id="slider">
+THROTTLE
+</div>
+</div>
+
+<br style="clear: both;" />
+<br style="clear: both;" />
+
+<div class="aux" id="aux1">
+A1
+<br />
+ARM
+</div>
+<div class="aux flRight" id="aux2">
+A2
+<br />
+BARO
+</div>
+<div class="aux" id="aux3">
+A3
+<br />
+GPS HOLD
+</div>
+<div class="aux flRight" id="aux4">
+A4
+<br />
+GPS HOME
+</div>
+
+<br style="clear: both;" />
+<br style="clear: both;" />
+<br style="clear: both;" />
+<br style="clear: both;" />
+
+<div id="console">
+    <table>
+      <tr>
+        <td class="tdTitle">Throttle</td>
+        <td id="throttleVal"></td>
+        <td class="tdTitle">Altitude</td>
+        <td id="altitudeVal"></td>
+      </tr>
+      <tr>
+        <td class="tdTitle">Pitch</td>
+        <td id="pitchVal"></td>
+        <td class="tdTitle">GPS # Sats</td>
+        <td id="gpsNumSatVal"></td>
+      </tr>
+      <tr>
+        <td class="tdTitle">Roll</td>
+        <td id="rollVal"></td>
+        <td class="tdTitle">GPS LAT/LON</td>
+        <td id="gpsLatLonVal"></td>
+      </tr>
+      <tr>
+        <td class="tdTitle">Yaw</td>
+        <td id="yawVal"></td>
+        <td class="tdTitle">GPS Speed</td>
+        <td id="gpsSpeedVal"></td>
+      </tr>
+      <tr>
+        <td class="tdTitle">GPS Altitude</td>
+        <td id="gpsAltitudeVal"></td>
+        <td class="tdTitle">Signal (RSSI)</td>
+        <td id="rssiVal"></td>
+      </tr>
+    </table>
+</div>
+
+</body>
+</html> 
